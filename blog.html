@@ -1,372 +1,564 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공덕 마사지 꿀팁 및 트렌드 칼럼 | 공덕 마사지 이벤트</title>
-  <meta name="description" content="공덕역 마포 로컬 직장인들이 애용하는 스웨디시 및 아로마 테라피 샵들의 주말 한정 특가 이벤트와 힐링 마사지 코스 상세 가이드. 로컬 꿀팁 실전 수록 칼럼.">
-  <meta name="keywords" content="공덕 마사지 이벤트, 공덕 마사지 트렌드, 공덕 마사지 칼럼, 공덕 마사지 팁">
-  <link rel="canonical" href="https://t3b05-gd-massage-evt-2.pages.dev/blog.html">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b05-gd-massage-evt-2">
-  <style>
-    
-    :root {
-      --bg-dark: #022c22;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #065f46;
-      --accent-neon: #10b981;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-      text-shadow: 0 0 8px var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 140px 20px 100px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-      letter-spacing: -0.06em;
-      line-height: 1.25;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    
-    .hero-glow p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
-      padding: 18px;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      border-radius: 8px;
-      margin: 25px auto;
-      max-width: 600px;
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      text-align: center;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-    
-    .phone-bar a:hover {
-      text-shadow: 0 0 10px var(--accent-neon);
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 15px 36px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 9999px;
-      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
-      transition: all 0.3s ease;
-      letter-spacing: 0.03em;
-    }
-    
-    .neon-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
-    }
-    
-    .sec-wrap {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 45px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 45px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-    
-    .glass-box h2 {
-      font-size: 2.2rem;
-      font-weight: 900;
-      margin-bottom: 28px;
-      color: #fff;
-      border-left: 5px solid var(--accent-neon);
-      padding-left: 20px;
-      letter-spacing: -0.04em;
-    }
-    
-    .glass-box p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      text-align: justify;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.015);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 28px;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: -0.02em;
-    }
-    
-    .mini-card p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .premium-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      color: var(--text-main);
-    }
-    
-    .premium-table th {
-      background: rgba(255,255,255,0.03);
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 800;
-      text-align: left;
-    }
-    
-    .premium-table td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-size: 1.05rem;
-    }
-    
-    .premium-table tbody tr:hover {
-      background: rgba(255,255,255,0.01);
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.88rem;
-      color: var(--accent-neon);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    
-    .reviewer-text {
-      font-size: 1.02rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 12px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
-    @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.3rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 28px;
-      }
-      .premium-table {
-        font-size: 0.9rem;
-      }
-    }
-  
-  </style>
-  <script type="application/ld+json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 - 공덕 마사지 이벤트 | 브로들의 마사지 룰</title>
+    <meta name="description" content="공덕 마사지 이벤트, 진짜 브로들을 위한 마사지가 왔다. 우리는 당신의 긴장을 풀어줄 거야. 이제 행동으로 보여줘. 010-6279-0862 전화 바로 걸어.">
+    <meta name="keywords" content="공덕 마사지, 공덕 마사지 이벤트, 마사지 이벤트, 브로 마사지, 공덕 마사지 추천, 마사지 할인, 마사지 블로그">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b05-gd-massage-evt-2.vercel.app/blog">
+    <meta property="og:title" content="블로그 - 공덕 마사지 이벤트 | 브로들의 마사지 룰">
+    <meta property="og:description" content="공덕 마사지 이벤트, 진짜 브로들을 위한 마사지가 왔다. 우리는 당신의 긴장을 풀어줄 거야. 이제 행동으로 보여줘.">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23111'/%3E%3Ctext x='40' y='300' font-family='monospace' font-size='80' fill='%23ffff00' font-weight='bold'%3E공덕 마사지%3C/text%3E%3Ctext x='40' y='400' font-family='monospace' font-size='40' fill='%2300ff41'%3E브로들의 룰%3C/text%3E%3C/svg%3E">
+    <meta property="og:url" content="https://t3b05-gd-massage-evt-2.vercel.app/blog">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="블로그 - 공덕 마사지 이벤트 | 브로들의 마사지 룰">
+    <meta name="twitter:description" content="공덕 마사지 이벤트, 진짜 브로들을 위한 마사지가 왔다. 우리는 당신의 긴장을 풀어줄 거야. 이제 행동으로 보여줘.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23111'/%3E%3Ctext x='40' y='300' font-family='monospace' font-size='80' fill='%23ffff00' font-weight='bold'%3E공덕 마사지%3C/text%3E%3Ctext x='40' y='400' font-family='monospace' font-size='40' fill='%2300ff41'%3E브로들의 룰%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "공덕 마사지 밤문화 칼럼",
-      "image": "https://t3b05-gd-massage-evt-2.pages.dev/og.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "로컬 브로"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "공덕 마사지 Portal"
-      },
-      "url": "https://t3b05-gd-massage-evt-2.pages.dev/blog.html"
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "공덕 마사지 이벤트 – 진짜 브로들은 이렇게 받는다",
+        "description": "공덕 마사지 이벤트, 브로들을 위한 마사지 가이드. 할인, 후기, 꿀팁 모두 공개.",
+        "datePublished": "2025-04-01",
+        "dateModified": "2025-04-01",
+        "author": {
+            "@type": "Person",
+            "name": "브로마사지"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "공덕 마사지 브로랩"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://t3b05-gd-massage-evt-2.vercel.app/blog"
+        }
     }
-  </script>
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+            line-height: 1.4;
+            border: 4px solid #ffff00;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            gap: 40px;
+        }
+
+        a, a:visited {
+            color: #00ff41;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        a:hover, a:focus {
+            background: #ffff00;
+            color: #111111;
+            outline: 4px solid #00ff41;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: #ffff00;
+            border-bottom: 4px solid #00ff41;
+            padding-bottom: 4px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 5rem);
+            line-height: 0.95;
+            border-bottom: 8px solid #00ff41;
+            margin-bottom: 0;
+            display: inline-block;
+            transform: rotate(-1deg) skewX(-3deg);
+            background: #111111;
+            padding: 0 8px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            border-left: 12px solid #ffff00;
+            padding-left: 12px;
+            border-bottom: none;
+        }
+
+        section {
+            padding: 24px;
+            border: 4px solid #ffff00;
+            background: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        header, nav, main, footer {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
+            border: 4px solid #00ff41;
+            padding: 24px;
+            background: #111;
+            transform: rotate(0.5deg);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffff00;
+            background: #111;
+            border: 4px solid #ffff00;
+            padding: 8px 16px;
+            display: inline-block;
+            transform: rotate(-2deg);
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            background: #ffff00;
+            color: #111;
+        }
+
+        /* hamburger menu */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 4px solid #00ff41;
+            color: #00ff41;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 8px 16px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .nav-toggle:hover {
+            background: #00ff41;
+            color: #111;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 4px solid #ffff00;
+            background: #111;
+            color: #ffff00;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: none;
+        }
+
+        nav ul li a:hover {
+            background: #ffff00;
+            color: #111;
+            border-color: #00ff41;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            padding: 40px 24px;
+            border: 8px solid #ffff00;
+            background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+            position: relative;
+            margin: 0 -24px;
+            width: calc(100% + 48px);
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            border: 6px solid #00ff41;
+            padding: 24px;
+            font-size: 6rem;
+            transform: rotate(3deg) scale(0.95);
+            text-align: center;
+            min-height: 200px;
+        }
+
+        .hero-visual span {
+            display: block;
+            font-size: 8rem;
+            line-height: 1;
+            filter: drop-shadow(8px 8px 0 #00ff41);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: #ffff00;
+            color: #111;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: 4px solid #00ff41;
+            text-transform: uppercase;
+            text-align: center;
+            transition: none;
+            transform: skewX(-5deg);
+        }
+
+        .btn:hover {
+            background: #00ff41;
+            border-color: #ffff00;
+            color: #111;
+            transform: skewX(5deg) scale(1.02);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .review-card {
+            border: 4px solid #00ff41;
+            padding: 24px;
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+        }
+
+        .review-card::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #ffff00;
+            z-index: -1;
+        }
+
+        .review-card h3 {
+            font-size: 1.2rem;
+            border: none;
+            padding: 0;
+            margin: 0;
+            color: #ffff00;
+        }
+
+        .review-stars {
+            color: #ffff00;
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: #777;
+            border-top: 2px solid #00ff41;
+            padding-top: 8px;
+        }
+
+        .blog-post {
+            border: 8px solid #ffff00;
+            padding: 40px 24px;
+            background: #1a1a1a;
+            transform: rotate(-0.5deg);
+        }
+
+        .blog-post p {
+            margin-bottom: 16px;
+            color: #ddd;
+            font-size: 1.1rem;
+        }
+
+        .blog-post strong {
+            color: #ffff00;
+        }
+
+        .blog-post ul {
+            margin: 16px 0;
+            padding-left: 24px;
+            border-left: 4px solid #00ff41;
+        }
+
+        .blog-post li {
+            margin-bottom: 12px;
+            color: #ccc;
+        }
+
+        .blog-post .highlight-box {
+            background: #222;
+            border: 4px solid #00ff41;
+            padding: 24px;
+            margin: 16px 0;
+            color: #ffff00;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .footer {
+            border-top: 8px solid #ffff00;
+            padding-top: 24px;
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #00ff41;
+        }
+
+        .phone-block {
+            background: #111;
+            border: 4px solid #00ff41;
+            padding: 16px 24px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffff00;
+            transform: skewX(-3deg);
+            display: inline-block;
+            margin: 16px 0;
+        }
+
+        .phone-block a {
+            color: #ffff00;
+            text-decoration: none;
+        }
+
+        .phone-block a:hover {
+            background: #ffff00;
+            color: #111;
+        }
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+                gap: 24px;
+                border-width: 3px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .nav-toggle {
+                display: inline-block;
+                align-self: flex-end;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 4px;
+                padding-top: 8px;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            nav ul li a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                margin: 0 -16px;
+                width: calc(100% + 32px);
+                padding: 24px 16px;
+            }
+
+            .hero-visual {
+                font-size: 4rem;
+                min-height: 150px;
+            }
+
+            .hero-visual span {
+                font-size: 5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .blog-post {
+                padding: 24px 16px;
+                border-width: 4px;
+            }
+
+            .phone-block {
+                font-size: 1.5rem;
+                padding: 12px 16px;
+            }
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-visual span {
+                font-size: 3.5rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+                padding: 12px 24px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">공덕 마사지 포털</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </div>
-  </header>
+<header>
+    <a href="/" class="logo">💆 BRO MASSAGE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">☰</button>
+    <nav>
+        <ul id="navMenu">
+            <li><a href="/">홈</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="tel:01062790862">전화 예약</a></li>
+            <li><a href="/event">이벤트</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">COLUMN BLOG</span> 트렌드 블로그</h1>
-    <p>우리 공덕 마사지를 한 단계 더 스마트하게 즐기고 힐링하고 갈 수 있는 실전 칼럼 저장소.</p>
-    <div class="phone-bar">
-      📞 예약 가이드 라인: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
+<main>
+    <section class="hero" aria-label="히어로 섹션">
+        <div class="hero-content">
+            <h1 style="border:none; transform:none; background:transparent; padding:0; margin-bottom:0;">공덕 마사지<br>이벤트 터짐</h1>
+            <p style="font-size:1.5rem; color:#00ff41; font-weight:bold;">진짜 브로들은 예약부터 다르다.</p>
+            <div class="phone-block">
+                <a href="tel:01062790862">📞 010-6279-0862</a>
+            </div>
+            <a href="tel:01062790862" class="btn">🔥 지금 전화해라 🔥</a>
+        </div>
+        <div class="hero-visual">
+            <span>💪🔥💆</span>
+        </div>
+    </section>
 
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>스웨디시 마사지에서 눈탱이 내상 절대 안 당하고 200% 힐링 만족하는 실전 가이드</h2>
-      <p>오늘 형이 진짜 동생들의 소중한 주머니 돈이랑 몸 건강을 지켜주는 유용한 실전 팁 세 가지만 알려준다.
-      첫째, 매장에 첫걸음했을 때부터 실장한테 "마사지 실력 검증된 에이스 추천"을 넌지시 요구해라. 성실한 업소라면 손님 기분 맞춰서 최고로 믹싱된 관리사를 우선 매칭해 준다.
-      둘째, 터치가 시작되고 딱 10분 안에 마음에 안 들면 즉시 교체를 요구하거나 강도 조정을 말해라. 뻘쭘하다고 참았다가 돈만 다 내고 집에 가서 이불 킥해봤자 아무 의미 없다. 10분 골든타임을 사수해야 함.
-      셋째, 정직한 정찰제 직통 예약 라인(010-6279-0862)을 통해 사전에 시간과 가격 예약을 픽스해 두고 입장해라. 뜨내기로 가면 대기실 구석에 박혀 홀대당하기 십상이지만 예약 고객은 룸 온습도 세팅부터 오일 라인업까지 VIP 대접 시작이다.
-      형 말만 딱 믿고 오늘 시원하게 몸 풀러 가라!</p>
-      <p style="margin-top: 30px;">
-        언제든지 추가적인 정보나 상세한 로컬 분위기 튜닝이 궁금하다면 형이 오픈해둔 <a href="index.html" style="color: var(--accent-neon); text-decoration: underline; font-weight: 700;">홈 포털</a>이나 <a href="about.html" style="color: var(--accent-neon); text-decoration: underline; font-weight: 700;">상세정보 라인</a>을 꼼꼼하게 대조 비교해 보고 최적의 초이스를 하길 적극 권한다.
-      </p>
-    </div>
-  </main>
+    <section>
+        <h2>💬 브로들의 생생한 후기</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <h3>🔥 근육짱 맨</h3>
+                <div class="review-stars">★★★★★</div>
+                <p>"공덕에서 이렇게 시원한 마사지는 처음. 진짜 하드하게 풀어줌. 예약 필수"</p>
+                <div class="review-date">2025-03-28</div>
+            </div>
+            <div class="review-card">
+                <h3>💪 헬창형</h3>
+                <div class="review-stars">★★★★★</div>
+                <p>"운동하고 왔는데 완전 살아났다. 다음날 근육통 제로. 이벤트 가격에 이런 퀄리티? 미쳤다."</p>
+                <div class="review-date">2025-03-30</div>
+            </div>
+            <div class="review-card">
+                <h3>🦵 다리풀림</h3>
+                <div class="review-stars">★★★★☆</div>
+                <p>"다리 붓기 싹 빠짐. 브로끼리 가면 더 재밌다. 한 번 더 갈 예정."</p>
+                <div class="review-date">2025-04-01</div>
+            </div>
+            <div class="review-card">
+                <h3>😎 마사지마스터</h3>
+                <div class="review-stars">★★★★★</div>
+                <p>"내가 마사지를 많이 받아봤는데, 여기는 다르다. 압박감이 미쳤음. 손기술 끝내줌."</p>
+                <div class="review-date">2025-04-02</div>
+            </div>
+            <div class="review-card">
+                <h3>👊 직장인 브로</h3>
+                <div class="review-stars">★★★★★</div>
+                <p>"회사 스트레스로 목이 돌아갈 뻔했는데, 한 방에 풀림. 공덕 마사지 이벤트 진짜 대박."</p>
+                <div class="review-date">2025-04-03</div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p><strong>공덕 마사지 찐후기 가이드 포털</strong></p>
-    <p>주소: 서울특별시 공덕구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a> | 
-      <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 공덕 마사지 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
+    <section class="blog-post">
+        <h2>✍️ 블로그: 공덕 마사지 이벤트, 브로들은 이렇게 받는다</h2>
+        <p><strong>짜증나는 하루? 몸은 뻐근한데 예산은 없어?</strong> 여기 공덕에 해결책이 있다. 우리는 마사지를 '이벤트'라고 부른다. 이유는 간단하다. 진짜 시원한 마사지는 매일 받을 수 없으니까. 하지만 지금, 우리는 너를 위해 특별한 이벤트를 준비했다.</p>
+        
+        <p>공덕 마사지 브로랩은 2025년 4월 한 달간 <strong>'전화 예약 시 30% 할인'</strong>이라는 미친 조건을 내걸었다. <strong>010-6279-0862</strong>로 지금 전화해라. 문자는 받지 않는다. 전화로 직접 예약해야 이벤트 적용된다. 존중한다.</p>
 
+        <div class="highlight-box">
+            📢 예약 전화: 010-6279-0862 (24시간 가능, 단 야간은 전날 예약 필수)
+        </div>
+
+        <p><strong>왜 브로들 사이에서 핫할까?</strong> 여기는 다르다. 마사지사들이 전부 현역 몸 관리 전문가다. 누구한테 받느냐가 아니라 <strong>어디서 받느냐</strong>가 중요한 법. 우리는 너의 근육을 이해한다. 압력 조절은 기본, 필요한 부위를 정확히 때린다.</p>
+
+        <ul>
+            <li>🔥 <strong>이벤트 A – 근육 풀기 패키지</strong> : 60분 전신 + 스포츠 테이핑 = 70,000원 (정가 100,000원)</li>
+            <li>🔥 <strong>이벤트 B – 회복 마사지</strong> : 90분 전신 + 스트레칭 + 발 마사지 = 100,000원 (정가 150,000원)</li>
+            <li>🔥 <strong>이벤트 C – 브로 케어</strong> : 120분 VIP 케어 (전신 + 목어깨 집중 + 두피) = 140,000원 (정가 200,000원)</li>
+        </ul>
+
+        <p><strong>예약 꿀팁</strong> : 평일 오전 타임이 가장 한산하다. 점심시간 전후로 오면 대기 없이 바로 입장. 주말은 전날 전화로 예약해야 자리 있다. 이건 팁이 아니라 룰이다.</p>
+
+        <p>공덕역 4번 출구에서 도보 3분. 건물 외관은 허름해 보일 수 있다. 하지만 들어오면 안다. 이곳이 진짜라는 것을. 우리는 인테리어에 돈 쓰지 않는다. <strong>손기술과 서비스에 돈 쓴다.</strong></p>
+
+        <div class="highlight-box" style="background:#ffff00; color:#111; border-color:#00ff41;">
+            🏆 "공덕에서 가장 강력한 마사지" – 2025 브로 선정
+        </div>
+
+        <p>지금 당장 전화해라. <a href="tel:01062790862">010-6279-0862</a>. 이벤트는 한정 수량이다. 기다리다가 끝나면 후회한다. 브로들의 선택은 빠르고 정확하다. 너도 그렇게 해라.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+        <a href="https://t3b05-gd-massage-evt-2.vercel.app">홈</a> | 
+        <a href="/blog">블로그</a> | 
+        <a href="tel:01062790862">전화 예약</a> |
 </body>
 </html>
