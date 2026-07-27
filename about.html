@@ -1,240 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보 - 공덕 마사지 이벤트 | 브로들의 마사지 룰</title>
-    <meta name="description" content="공덕 마사지 이벤트, 진짜 브로들을 위한 마사지가 왔다. 상세 정보? 여기 다 있다. 공덕역 3번 출구, 24시, 남성 전용. 010-6279-0862 전화 바로 걸어.">
-    <meta name="keywords" content="공덕 마사지, 공덕 마사지 이벤트, 마사지 이벤트, 브로 마사지, 공덕 마사지 상세 정보, 마사지 가격, 공덕 역 마사지, 마사지 할인">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <link rel="canonical" href="https://t3b05-gd-massage-evt-2.vercel.app/info">
-    <meta property="og:title" content="정보 - 공덕 마사지 이벤트 | 브로들의 마사지 룰">
-    <meta property="og:description" content="공덕 마사지 이벤트, 진짜 브로들을 위한 마사지가 왔다. 상세 정보? 여기 다 있다. 공덕역 3번 출구, 24시, 남성 전용. 010-6279-0862 전화 바로 걸어.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b05-gd-massage-evt-2.vercel.app/info">
-    <meta property="og:locale" content="ko_KR">
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body { 
-            font-family: 'Courier New', Courier, monospace; 
-            background: #f5f0e8; 
-            color: #1a1a1a; 
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        a, a:visited { color: #1a1a1a; text-decoration: underline wavy #e6b800 2px; }
-        a:hover, a:focus { background: #e6b800; color: #0d0d0d; text-decoration: none; outline: 3px solid #1a1a1a; }
-        h1, h2, h3, h4, h5, h6 { font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
-        h1 { font-size: 3.5rem; line-height: 0.9; margin: 1.5rem 0; border-left: 12px solid #e6b800; padding-left: 1rem; }
-        h2 { font-size: 2.2rem; margin: 2rem 0 1rem; border-bottom: 6px double #1a1a1a; padding-bottom: 0.5rem; }
-        section { padding: 3rem 1.5rem; max-width: 1200px; margin: 0 auto; width: 100%; }
-        header, nav, main, footer { display: block; }
-        header { 
-            background: #0d0d0d; 
-            color: #f5f0e8; 
-            padding: 1rem 1.5rem; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            border-bottom: 6px solid #e6b800;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo { 
-            font-size: 1.8rem; 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            letter-spacing: -2px; 
-            color: #e6b800; 
-            text-decoration: none; 
-        }
-        .logo:hover { color: #f5f0e8; background: transparent; }
-        .nav-toggle { 
-            display: none; 
-            background: none; 
-            border: 3px solid #e6b800; 
-            color: #e6b800; 
-            font-size: 2rem; 
-            padding: 0.3rem 0.8rem; 
-            cursor: pointer; 
-            line-height: 1;
-        }
-        .nav-menu { display: flex; gap: 2rem; list-style: none; align-items: center; }
-        .nav-menu a { color: #f5f0e8; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
-        .nav-menu a:hover { background: #e6b800; color: #0d0d0d; }
-        .tel-link { 
-            background: #e6b800; 
-            color: #0d0d0d; 
-            padding: 0.5rem 1.2rem; 
-            font-weight: 900; 
-            text-decoration: none; 
-            border: 3px solid #1a1a1a;
-            font-size: 1rem;
-        }
-        .tel-link:hover { background: #1a1a1a; color: #e6b800; border-color: #e6b800; }
-        footer { 
-            background: #0d0d0d; 
-            color: #777; 
-            text-align: center; 
-            padding: 2rem 1.5rem; 
-            border-top: 6px solid #e6b800; 
-            margin-top: auto;
-            font-size: 0.85rem;
-        }
-        footer a { color: #e6b800; }
-
-        /* 카드/리스트 공통 */
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
-        .info-card { 
-            background: #fff; 
-            border: 4px solid #1a1a1a; 
-            padding: 1.5rem; 
-            box-shadow: 8px 8px 0 #e6b800;
-            transition: transform 0.2s;
-        }
-        .info-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0 #e6b800; }
-        .info-card h3 { font-size: 1.4rem; margin-bottom: 1rem; border-left: 6px solid #e6b800; padding-left: 0.8rem; }
-        .info-card p { margin-bottom: 0.5rem; }
-        .highlight { background: #e6b800; color: #0d0d0d; padding: 0 0.3rem; font-weight: 700; }
-        .faq-list { list-style: none; }
-        .faq-list li { 
-            margin-bottom: 1.5rem; 
-            border: 2px solid #1a1a1a; 
-            padding: 1rem; 
-            background: #fff;
-        }
-        .faq-list li::before { content: '☛ '; color: #e6b800; font-weight: 900; font-size: 1.4rem; }
-        .faq-q { font-weight: 900; display: block; margin-bottom: 0.3rem; }
-        .faq-a { display: block; color: #333; }
-
-        @media (max-width: 768px) {
-            .nav-toggle { display: block; }
-            .nav-menu { 
-                display: none; 
-                flex-direction: column; 
-                position: absolute; 
-                top: 100%; 
-                left: 0; 
-                right: 0; 
-                background: #0d0d0d; 
-                padding: 1rem; 
-                gap: 1rem; 
-                border-bottom: 6px solid #e6b800;
-            }
-            .nav-menu.active { display: flex; }
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 1.8rem; }
-            .info-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>공덕 마사지 이벤트 – 상세 정보</title>
+  <meta name="description" content="공덕 마사지 이벤트에 대한 구체적인 일정, 참여 조건, 지역별 특성을 상세히 분석하고, 다양한 상황에 맞는 마사지 선택 기준을 제공합니다.">
+  <meta name="keywords" content="공덕 마사지, 이벤트 상세, 마사지 선택 가이드, 지역별 마사지">
+  <link rel="canonical" href="https://gongdeok-body-trend.link-hub.org/about.html">
+  <meta property="og:title" content="공덕 마사지 이벤트 – 상세 정보">
+  <meta property="og:description" content="공덕 마사지 이벤트에 대한 구체적인 일정, 참여 조건, 지역별 특성을 상세히 분석하고, 다양한 상황에 맞는 마사지 선택 기준을 제공합니다.">
+  <meta property="og:url" content="https://gongdeok-body-trend.link-hub.org/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gongdeok-body-trend.link-hub.org/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="/" class="logo">BRO♠MASSAGE</a>
-        <button class="nav-toggle" aria-label="메뉴 열기" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="/">홈</a></li>
-                <li><a href="/event">이벤트</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/contact">문의</a></li>
-                <li><a href="tel:01062790862" class="tel-link">전화 010-6279-0862</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="nav-present">
+      <a href="/">홈</a>
+      <a href="/about">소개</a>
+      <a href="/services">서비스</a>
+      <a href="/events">이벤트</a>
+      <a href="/contact">연락처</a>
+      <button class="hamburger-menu" aria-label="메뉴 열기"></button>
+    </nav>
+  </header>
 
-    <main>
-        <section id="hero-info">
-            <h1>정보: 공덕 마사지 이벤트</h1>
-            <p style="font-size: 1.3rem; font-weight: 700; border-left: 6px solid #e6b800; padding-left: 1rem; margin: 1rem 0;">
-                궁금하면 전화해. 다 알려준다. <a href="tel:01062790862" style="background:#e6b800; padding:0.2rem 0.5rem; color:#0d0d0d;">010-6279-0862</a>
-            </p>
-            <p style="margin-bottom: 1rem;">
-                공덕 마사지 이벤트는 <span class="highlight">진짜 브로들</span>을 위해 만들어졌다. 
-                가격, 위치, 시간 — 전부 까발린다. 아래 정보를 봐라. 
-            </p>
-        </section>
+  <div class="main-container">
+    <section>
+      <h1>공덕 마사지 이벤트 개요</h1>
+      <p>2026년 상반기 공덕 지역에서 진행되는 대규모 마사지 이벤트는 지역 주민과 방문객을 대상으로 한 특별 할인 및 맞춤 프로그램을 제공한다. 이벤트는 7월 15일부터 8월 31일까지 총 6주간 진행되며, 매주 토·일요일에 별도 프로모션이 추가된다.</p>
+      <p>본 이벤트는 공덕역 인근 주요 마사지 업체들이 공동으로 참여해 다양한 테라피 옵션을 한 자리에서 비교·예약할 수 있도록 설계되었다. 각 업체는 30분, 60분, 90분 코스로 구분된 패키지를 제공하며, 사전 예약 시 추가 10% 할인 혜택을 받을 수 있다.</p>
+    </section>
 
-        <section id="detail">
-            <h2>📍 위치 & 시간</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>공덕역 3번 출구</h3>
-                    <p><strong>주소:</strong> 서울 마포구 공덕동 00-00</p>
-                    <p><strong>찾아오는 길:</strong> 공덕역 3번 출구에서 도보 1분. 건물 2층. 간판 보인다.</p>
-                    <p><strong>영업 시간:</strong> 24시간 <span class="highlight">연중무휴</span></p>
-                </div>
-                <div class="info-card">
-                    <h3>주변 랜드마크</h3>
-                    <p>공덕시장, 마포구청, DMC 인근. 골목 안쪽이라 조용하다.</p>
-                    <p>주차 가능 (건물 지하 주차장, 1시간 무료)</p>
-                    <p>버스 정류장 / 지하철 모두 5분 거리</p>
-                </div>
-            </div>
+    <section>
+      <h2>이벤트 일정 및 참여 조건</h2>
+      <p>이벤트는 사전 온라인 예약을 전제로 하며, 예약 페이지에서 원하는 날짜와 시간을 선택한 뒤 간단한 개인정보와 결제 정보를 입력하면 확정된다. 당일 방문 시에는 예약 확인 문자를 제시해야 하며, 예약 없이 방문할 경우 할인 혜택을 적용받을 수 없다.</p>
+      <p>특정 시간대(오전 10시~오후 2시)와 인원수(1인·2인·그룹)별로 별도 할인율이 적용된다. 예를 들어, 2인 이상의 그룹이 오후 3시 이후에 예약하면 기본 할인에 추가 5%를 제공한다. 이러한 세부 조건은 이벤트 페이지의 ‘시간·인원별 혜택표’를 통해 확인 가능하다.</p>
+    </section>
 
-            <h2>💪 서비스 & 가격</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>스포츠 마사지</h3>
-                    <p><span class="highlight">60분 / 70,000원</span> (이벤트가)</p>
-                    <p>근육 뭉친 브로들 전용. 손가락으로 파고든다.</p>
-                </div>
-                <div class="info-card">
-                    <h3>딥 티슈 마사지</h3>
-                    <p><span class="highlight">90분 / 100,000원</span> (이벤트가)</p>
-                    <p>깊은 결까지. 진짜 풀어준다. 고통은 잠시, 개운함은 길게.</p>
-                </div>
-                <div class="info-card">
-                    <h3>전신 릴렉스</h3>
-                    <p><span class="highlight">120분 / 130,000원</span> (이벤트가)</p>
-                    <p>머리부터 발끝까지. 자고 일어나면 새사람 됨.</p>
-                </div>
-            </div>
-            <p style="background:#1a1a1a; color:#e6b800; padding:1rem; font-weight:700;">
-                ※ 위 가격은 <u>이벤트 기간 한정</u>이다. 전화로 예약하면 추가 할인. <a href="tel:01062790862" style="color:#fff;">010-6279-0862</a>
-            </p>
-        </section>
+    <section>
+      <h2>공덕 지역의 마사지 특성 비교</h2>
+      <p>공덕은 도심 접근성이 뛰어나면서도 주거 밀집도가 높은 특성을 가지고 있다. 이에 따라 짧은 시간 안에 효과를 볼 수 있는 ‘핵심 릴렉스 코스’와 장시간 깊은 힐링을 제공하는 ‘프리미엄 테라피 코스’가 각각 선호된다.</p>
+      <p>인근 연남동·홍대입구와 비교했을 때, 공덕은 동일 가격대에서 더 많은 예약 가능 시간을 제공한다. 반면, 홍대는 트렌디한 테라피와 최신 장비 도입이 활발하므로, 최신 트렌드 체험을 원하는 고객에게 적합하다. 이러한 차이를 기반으로 개인의 목적(시간 절약·심층 힐링·트렌드 체험)에 따라 선택 기준을 정한다.</p>
+    </section>
 
-        <section id="faq">
-            <h2>❓ 브로들이 묻는다</h2>
-            <ul class="faq-list">
-                <li>
-                    <span class="faq-q">Q. 예약 꼭 해야 됨?</span>
-                    <span class="faq-a">A. 안 하면 기다려야 한다. 예약이 빠르고 확실하다. 전화로 5초면 끝.</span>
-                </li>
-                <li>
-                    <span class="faq-q">Q. 남성 전용이야?</span>
-                    <span class="faq-a">A. 당연하다. 브로들만 받는다. 여성은 불가. 이유? 우리는 브로 마사지니까.</span>
-                </li>
-                <li>
-                    <span class="faq-q">Q. 주차 됨?</span>
-                    <span class="faq-a">A. 됨. 건물 지하 주차장. 1시간 무료. 추가는 1시간 2,000원.</span>
-                </li>
-                <li>
-                    <span class="faq-q">Q. 이벤트 언제까지?</span>
-                    <span class="faq-a">A. 물량 소진 시까지. 정확한 날짜는 전화로 확인. 미루지 마라.</span>
-                </li>
-                <li>
-                    <span class="faq-q">Q. 결제 방법?</span>
-                    <span class="faq-a">A. 현금, 카드, 계좌이체 다 된다. 브로들 맞춤.</span>
-                </li>
-            </ul>
-        </section>
+    <section>
+      <h2>상황별 마사지 선택 체크리스트</h2>
+      <p>① <strong>시간이 제한된 경우</strong>: 30분 ‘핵심 릴렉스 코스’를 선택하고, 사전 예약 시 최소 5% 추가 할인을 활용한다. ② <strong>심신 회복이 주요 목표</strong>: 60분 ‘전신 힐링 코스’를 예약하고, 이벤트 기간 중 제공되는 아로마 오일 선택권을 활용한다.</p>
+      <p>③ <strong>가족·친구와 함께 이용</strong>: 2인 ‘커플 힐링 패키지’를 선택하고, 오후 3시 이후 예약 시 추가 그룹 할인을 적용한다. ④ <strong>특정 부위 집중 치료</strong>: 전문가 상담 후 맞춤 ‘부위별 집중 코스’를 예약해, 이벤트 기간에만 제공되는 무료 부위 진단 서비스를 이용한다.</p>
+    </section>
 
-        <section id="why-bro">
-            <h2>🔥 왜 브로 마사지인가</h2>
-            <p style="font-size:1.1rem; margin-bottom:1rem;">
-                <span class="highlight">공덕 마사지 이벤트</span>는 가짜 힐링 같은 거 안 한다. 
-                근육이 딱딱하면 말랑하게 풀어주고, 스트레스 가득하면 밀어내버린다. 
-                브로들이 직접 만든 마사지, 브로들이 직접 시행한다. 
-                <strong>결과로 말한다.</strong>
-            </p>
-            <p style="background:#1a1
+    <section>
+      <h2>자주 묻는 질문(FAQ)</h2>
+      <p><strong>Q1. 이벤트 할인은 어떻게 적용되나요?</strong> 예약 단계에서 쿠폰 코드를 입력하면 자동으로 할인이 적용된다. 쿠폰은 이벤트 페이지에 매일 업데이트된다.</p>
+      <p><strong>Q2. 예약 취소는 가능한가요?</strong> 예약일 기준 24시간 전까지는 무료 취소가 가능하다. 그 이후에는 50% 취소 수수료가 부과된다.</p>
+      <p><strong>Q3. 이벤트 기간 중에도 일반 가격으로 예약할 수 있나요?</strong> 네, 이벤트 페이지 이외의 일반 예약 창구를 이용하면 일반 가격이 적용된다. 단, 이벤트 할인과 중복 적용은 불가한다.</p>
+    </section>
+  </div>
 </body>
 </html>
